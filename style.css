@@ -1,0 +1,20 @@
+.header_section .header_top .contact_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-end;
+  flex-direction: row;
+  direction: rtl;
+}
+
+.header_section .header_top .contact_nav a {
+  color: #ffffff;
+  margin-left: 55px;
+  margin-right: 0;
+}
+
+.header_section .header_top .contact_nav a:last-child {
+  margin-left: 0;
+} 

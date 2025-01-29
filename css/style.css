@@ -96,9 +96,11 @@ a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  
 }
 
 .header_section .header_top .contact_nav a {
@@ -107,6 +109,7 @@ a:focus {
 
 .header_section .header_top .contact_nav a i {
   color: #ff8a1d;
+  padding-right : 3px;
 }
 
 .header_section .header_bottom {
