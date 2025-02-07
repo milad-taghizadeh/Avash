@@ -88,6 +88,14 @@
     <!-- end header section -->
   </div>
 
+  <!-- Add this right after the opening <body> tag -->
+  <div class="notification" id="notification">
+    <div class="notification_content">
+      <i class="fa fa-check-circle"></i>
+      <span>پیام شما با موفقیت ارسال شد</span>
+    </div>
+    <div class="notification_progress"></div>
+  </div>
 
   <!-- contact section -->
 
@@ -139,7 +147,7 @@
                 </div>
               </div>
               <div class="form_group">
-                <button type="submit" class="submit_btn">
+                <button type="submit" class="submit_btn" id="submitBtn">
                   <span>ارسال پیام</span>
                   <i class="fa fa-paper-plane"></i>
                 </button>
@@ -297,6 +305,28 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
   <!-- End Google Map -->
 
+  <!-- Add this before the closing </body> tag -->
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('.contact_form');
+    const notification = document.getElementById('notification');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault(); // Prevent actual form submission for demo
+      
+      // Show notification
+      notification.classList.add('show');
+      
+      // Hide notification after 5 seconds
+      setTimeout(() => {
+        notification.classList.remove('show');
+      }, 5000);
+      
+      // Optional: Reset form
+      form.reset();
+    });
+  });
+  </script>
 
 </body>
 
