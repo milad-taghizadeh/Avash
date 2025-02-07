@@ -84,8 +84,9 @@
                 موارد و مشکلات خود به خود کمک کنید از طریق این سایت شما را در حال حاضر و با توجه به نیاز های خود
                 و در حال حاضر در آن موارد و مشکلات خود به خود کمک کنید از طریق این سایت شما را در حال حاضر و با
               </p>
-              <a href="">
+              <a href="contact.html" class="custom-btn">
                 ارتباط با ما
+                <i class="fa fa-arrow-left"></i>
               </a>
             </div>
           </div>
@@ -152,8 +153,9 @@
 
               انواع وب سايت هاى اينترنتى مجاز . پشتيباني بسته هاي نرم افزارى غير رسانه اي غير فرهنكى غير هنرى و ...
             </p>
-            <a href="about.html">
+            <a href="about.html" class="custom-btn">
               بیشتر بخوانید
+              <i class="fa fa-arrow-left"></i>
             </a>
           </div>
         </div>
@@ -171,29 +173,28 @@
 
 
   <!-- professional section -->
-
-  <section class="professional_section layout_padding">
+  <section class="professional_section">
     <div class="container">
-      <div class="row">
+      <div class="row align-items-center">
         <div class="col-md-6">
           <div class="img-box">
-            <!-- TODO: fix this -->
-            <img src="images/index3.webp" alt="">
+            <img src="images/index3.webp" alt="Professional Services" class="img-fluid rounded shadow-lg">
           </div>
         </div>
-        <div class="col-md-6 ">
+        <div class="col-md-6">
           <div class="detail-box" style="text-align: right;">
-            <h2>
-              ما این کار را برای شما انجام میدهیم <br>
-              شماره ۴
+            <span class="subtitle">خدمات حرفه‌ای</span>
+            <h2 class="title">
+              راهکارهای حرفه‌ای <br>
+              برای کسب و کار شما
             </h2>
-            <p>
-              randomised words which don't look even slightly believable. If you are going to use a passage of Lorem
-              Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All randomised
-              words which don't look even slightly
+            <p class="description">
+              با بیش از یک دهه تجربه در ارائه خدمات مالی و حسابداری، تیم متخصص ما آماده است
+              تا با ارائه راهکارهای نوین و کارآمد، کسب و کار شما را به سوی موفقیت هدایت کند.
             </p>
-            <a href="">
-              مشاهده بیشتر
+            <a href="service.html" class="custom-btn">
+              مشاهده خدمات
+              <i class="fa fa-arrow-left"></i>
             </a>
           </div>
         </div>
@@ -258,8 +259,9 @@
         </div>
       </div>
       <div class="btn-box">
-        <a href="service.html">
+        <a href="service.html" class="custom-btn">
           بیشتر بخوانید
+          <i class="fa fa-arrow-left"></i>
         </a>
       </div>
     </div>
@@ -274,37 +276,69 @@
         <h2>
           راه های ارتباط با ما
         </h2>
+        <p class="section_description">تیم متخصص ما آماده پاسخگویی و راهنمایی شما عزیزان می‌باشد</p>
       </div>
       <div class="row">
         <div class="col-md-6">
-          <form action="">
-            <div>
-              <input type="text" placeholder="نام" />
-            </div>
-            <div>
-              <input type="text" placeholder="شماره همراه" />
-            </div>
-            <div>
-              <input type="email" placeholder="ایمیل" />
-            </div>
-            <div>
-              <input type="text" class="message-box" placeholder="پیام خود را بنویسید" />
-            </div>
-            <div class="d-flex ">
-              <button>
-                ارسال
-              </button>
-            </div>
-          </form>
+          <div class="contact_form_container">
+            <form action="" class="contact_form">
+              <div class="form_group">
+                <div class="input_group">
+                  <span class="input_icon">
+                    <i class="fa fa-user"></i>
+                  </span>
+                  <input type="text" placeholder="نام و نام خانوادگی" class="form_control" maxlength="50" />
+                </div>
+              </div>
+              <div class="form_group">
+                <div class="input_group">
+                  <span class="input_icon">
+                    <i class="fa fa-phone"></i>
+                  </span>
+                  <input type="text" placeholder="شماره تلفن همراه" class="form_control" maxlength="11" />
+                </div>
+              </div>
+              <div class="form_group">
+                <div class="input_group">
+                  <span class="input_icon">
+                    <i class="fa fa-envelope"></i>
+                  </span>
+                  <input type="email" placeholder="ایمیل" class="form_control" maxlength="100" />
+                </div>
+              </div>
+              <div class="form_group">
+                <div class="input_group">
+                  <span class="input_icon message_icon">
+                    <i class="fa fa-comment"></i>
+                  </span>
+                  <textarea class="form_control message_input" placeholder="پیام خود را بنویسید" maxlength="500"></textarea>
+                  <span class="char_count">0 / 500</span>
+                </div>
+              </div>
+              <div class="form_group">
+                <button type="submit" class="submit_btn">
+                  <span>ارسال پیام</span>
+                  <i class="fa fa-paper-plane"></i>
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
         <div class="col-md-6">
-          <div class="map_container">
-            <div class="map" style="display: flex; justify-content: center; align-items: center; padding-left: 10px;">
-              <iframe src="https://balad.ir/embed?p=2M6nGiiwNotAmL" title="مشاهده «شبکه پردازان ویستا» روی نقشه بلد"
-                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                tabindex="0"></iframe>
+          <!-- <div class="map_container"> -->
+            <div class="map_wrapper">
+              <iframe src="https://balad.ir/embed?p=2M6nGiiwNotAmL" 
+                      title="مشاهده «شبکه پردازان ویستا» روی نقشه بلد"
+                      width="100%" 
+                      height="450" 
+                      frameborder="0" 
+                      style="border:0; border-radius: 15px;" 
+                      allowfullscreen="" 
+                      aria-hidden="false" 
+                      tabindex="0">
+              </iframe>
             </div>
-          </div>
+          <!-- </div> -->
         </div>
       </div>
     </div>
@@ -313,92 +347,71 @@
   <!-- end contact section -->
 
 
-  <!-- info section -->
-  <section class="info_section ">
+  <!-- New Footer Section -->
+<footer class="main_footer">
+  <div class="footer_top">
     <div class="container">
-      <h4>
-        ما را پیدا کنید
-      </h4>
       <div class="row">
-        <div class="col-lg-10 mx-auto">
-          <div class="info_items">
-            <div class="row">
-              <div class="col-md-4">
-                <a href="">
-                  <div class="item ">
-                    <div class="img-box ">
-                      <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    </div>
-                    <p>
-                      تهران - قائم مقام سنايي - خيابان خردمند شمالى - كوجه دى - يلاك ٨ - طبقه ۶ - واحد شرقى
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-4">
-                <a href="">
-                  <div class="item ">
-                    <div class="img-box ">
-                      <i class="fa fa-phone" aria-hidden="true"></i>
-                    </div>
-                    <p dir="ltr">
-                      +۹۸ ۲۱ ۸۸ ۵۲ ۹۸۲۶
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-4">
-                <a href="">
-                  <div class="item ">
-                    <div class="img-box">
-                      <i class="fa fa-envelope" aria-hidden="true"></i>
-                    </div>
-                    <p>
-                      info@avashmohaseb.ir
-                    </p>
-                  </div>
-                </a>
-              </div>
-            </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="footer_widget">
+            <h3 class="widget_title">درباره ما</h3>
+            <p class="widget_text">
+              مجموعه حسابداری و حسابرسی آوش محاسب با تکیه بر دانش و تجربه، آماده ارائه خدمات تخصصی به کسب و کارهای شما می‌باشد.
+            </p>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6">
+          <div class="footer_widget">
+            <h3 class="widget_title">دسترسی سریع</h3>
+            <ul class="footer_links">
+              <li><a href="index.html">خانه</a></li>
+              <li><a href="about.html">درباره ما</a></li>
+              <li><a href="service.html">خدمات</a></li>
+              <li><a href="contact.html">تماس با ما</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6">
+          <div class="footer_widget">
+            <h3 class="widget_title">اطلاعات تماس</h3>
+            <ul class="footer_contact">
+              <li>
+                <i class="fa fa-map-marker"></i>
+                <span>تهران - قائم مقام سنايي - خيابان خردمند شمالى - كوجه دى - يلاك ٨ - طبقه ۶</span>
+              </li>
+              <li>
+                <i class="fa fa-phone"></i>
+                <span dir="ltr">+۹۸ ۲۱ ۸۸ ۵۲ ۹۸۲۶</span>
+              </li>
+              <li>
+                <i class="fa fa-envelope"></i>
+                <span>info@avashmohaseb.ir</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-    <div class="social-box">
-      <h4>
-        ما را دنبال کنید
-      </h4>
-      <div class="box">
-        <a href="">
-          <i class="fa fa-facebook" aria-hidden="true"></i>
-        </a>
-        <a href="">
-          <i class="fa fa-twitter" aria-hidden="true"></i>
-        </a>
-        <a href="">
-          <i class="fa fa-youtube" aria-hidden="true"></i>
-        </a>
-        <a href="">
-          <i class="fa fa-instagram" aria-hidden="true"></i>
-        </a>
+  </div>
+  
+  <div class="footer_bottom">
+    <div class="container">
+      <div class="footer_bottom_content">
+        <div class="copyright">
+          <p>&copy; <span id="displayDateYear"></span> کلیه حقوق برای شرکت آوش محاسب پارسا محفوظ است.</p>
+        </div>
+        <div class="footer_social">
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-telegram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-whatsapp"></i></a>
+        </div>
       </div>
     </div>
-  </section>
-
-
-
-  <!-- end info_section -->
-
-  <!-- footer section -->
-  <footer class="footer_section">
-    <div class="container">
-      <p>
-        &copy; <span id="displayDateYear"></span> همه حقوق متعلق به شرکت
-        <a href="">آوش محاسب پارسا می‌باشد</a>
-      </p>
-    </div>
-  </footer>
-  <!-- footer section -->
+  </div>
+</footer>
 
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.js"></script>
@@ -410,6 +423,24 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
   <!-- End Google Map -->
 
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const messageInput = document.querySelector('.message_input');
+    const charCount = document.querySelector('.char_count');
+    
+    messageInput.addEventListener('input', function() {
+      const remaining = this.value.length;
+      const max = this.getAttribute('maxlength');
+      charCount.textContent = `${remaining} / ${max}`;
+      
+      if (remaining >= max - 50) {
+        charCount.style.color = '#dc3545';
+      } else {
+        charCount.style.color = '#666';
+      }
+    });
+  });
+  </script>
 
 </body>
 
